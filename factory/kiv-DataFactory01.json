@@ -1,0 +1,9 @@
+{
+	"name": "kiv-DataFactory01",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8f1e7f7b-3219-4237-8aaf-c10583661167",
+		"tenantId": "6fd82bf0-4e7d-43ab-ad21-9eb5a4bb5a0d"
+	}
+}

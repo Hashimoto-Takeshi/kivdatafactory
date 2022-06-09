@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyData",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/kivcsv/blobs/new/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/30000b8c-5c46-4b12-94f5-ad4cdedc2bda/resourceGroups/vueswa/providers/Microsoft.Storage/storageAccounts/kivdatalake01",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

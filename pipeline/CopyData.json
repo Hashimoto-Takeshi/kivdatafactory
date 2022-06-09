@@ -29,6 +29,7 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
+							"modifiedDatetimeStart": "2022-06-09T00:00:00.943Z",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -53,67 +54,12 @@
 								}
 							},
 							{
-								"sink": {
-									"path": "$['CAR_ORDER']"
-								}
-							},
-							{
 								"source": {
 									"name": "CAR_NO",
 									"type": "String"
 								},
 								"sink": {
 									"path": "$['CAR_NO']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['CAR_TYPE']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['CAR_GROUP']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['CAR_GROUP_LABEL']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['INPUT_FILENAME']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['id']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['_rid']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['_self']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['_etag']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['_attachments']"
-								}
-							},
-							{
-								"sink": {
-									"path": "$['_ts']"
 								}
 							}
 						]

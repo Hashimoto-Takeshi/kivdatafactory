@@ -1,0 +1,40 @@
+{
+	"name": "CosmosDbSqlApiCollection1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDb1_sqlapi",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"MODEL_NAME": {
+					"type": "string"
+				},
+				"CAR_ORDER": {
+					"type": "integer"
+				},
+				"CAR_NO": {
+					"type": "integer"
+				},
+				"CAR_TYPE": {
+					"type": "string"
+				},
+				"CAR_GROUP": {
+					"type": "integer"
+				},
+				"CAR_GROUP_LABEL": {
+					"type": "string"
+				},
+				"INPUT_FILENAME": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "car_no"
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "CAR_NO_20220127-2050.csv",
+				"fileSystem": "kivcsv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "MODEL_NAME",
+				"type": "String"
+			},
+			{
+				"name": "CAR_NO",
+				"type": "String"
+			},
+			{
+				"name": "CAR_ORDER",
+				"type": "String"
+			}
+		]
+	}
+}
